@@ -1,0 +1,54 @@
+
+@media(max-width:1025px){
+    .left{
+    flex: 3;
+    }
+    .right{
+    flex: 1;
+    }
+    #chekbox{
+    display: block;
+    }
+    .right ul{width: 100%;
+    height: 50vh;
+    background-color: rgb(0, 187, 255);position: absolute;top: 14%;left: 0;display: none;
+    
+    }
+    .right ul li{
+    display: block;text-align: center;line-height: 54px;
+    }
+    #ul{
+    transition: 0.5s;
+    }
+    }
+    @media(max-width:768px){
+    #pm{margin-left: 10px;font-size: 2rem;}
+    #sm{margin-left: 10px;font-size:0.9rem;}
+    }
+    @media(max-width:500px){
+    #pm{margin-left: 5px;font-size: 2rem;}
+    #sm{margin-left: 5px;font-size:0.8rem;}
+    }
+
+    
+    /* header code end here  */
+    /* page 1 code start here  */
+    @media(max-width:500px){
+
+        #text-page1 h1{font-size: 25px;}
+        .card {height: 150px;}
+    }
+    /* page 1 code end here  */
+    /* page 2 code start here  */
+    @media (max-width: 768px) {
+        .card p {
+          font-size: 14px;
+        }
+      
+        .card i {
+          font-size: 28px;
+        }
+       
+      }
+      
+    /* page 2 code end here  */

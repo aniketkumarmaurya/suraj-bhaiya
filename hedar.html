@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.header {
+  background-color: #fff9c4;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.instructions {
+  background-color: #e1f5fe;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.instructions ul {
+  list-style: none;
+}
+
+.instructions li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.instructions a {
+  color: #0277bd;
+  text-decoration: none;
+}
+
+.instructions a:hover {
+  text-decoration: underline;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box i {
+  font-size: 36px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header p, .instructions li {
+    font-size: 14px;
+  }
+
+  .box i {
+    font-size: 28px;
+  }
+
+  .box p {
+    font-size: 14px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Beneficiary Status देखें</h1>
+      <p>
+        अगर आप प्रधानमंत्री किसान सम्मान निधि योजना की अगली किस्त का इंतजार है, और आप जानना चाहते हैं,
+        कि आपको इस बार इस योजना के तहत मिलने वाला आर्थिक लाभ मिलेगा या नहीं, तो आप लाभार्थी स्टेटस और Beneficiary List जरूर देखें।
+      </p>
+    </div>
+    <div class="instructions">
+      <ul>
+        <li>सबसे पहले आधिकारिक वेबसाइट - <a href="https://pmkisan.gov.in/" target="_blank">https://pmkisan.gov.in/</a> पर विजिट करें।</li>
+        <li>इसके बाद आपके सामने PM Kisan योजना का ऑनलाइन पोर्टल खुल जाएगा।</li>
+      </ul>
+    </div>
+    <div class="layout">
+      <div class="box">
+        <i class="fas fa-user-plus"></i>
+        <p>New Farmer Registration</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-file-alt"></i>
+        <p>e-KYC</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-users"></i>
+        <p>Know Your Status</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
